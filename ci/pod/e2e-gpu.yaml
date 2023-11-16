@@ -24,7 +24,7 @@ spec:
           topologyKey: "kubernetes.io/hostname"
   containers:
   - name: build
-    image: milvusdb/knowhere-gpu-build:amd64-ubuntu20.04-20230320-fa11e7b
+    image: harbor.milvus.io/milvus/milvus-env:gpu-ubuntu20.04-20231116-8f2dbe1
     tty: true
     args: ["cat"]
   - name: main
