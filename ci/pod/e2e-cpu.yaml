@@ -48,3 +48,7 @@ spec:
     - name: db-data
       persistentVolumeClaim:
         claimName: db-data
+    - name: workspace-volume
+      hostPath:
+        path: /opt/nvme/jenkins/agent
+        type: Directory      
