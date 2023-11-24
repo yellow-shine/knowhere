@@ -8,6 +8,7 @@ spec:
   enableServiceLinks: false
   nodeSelector:
     app: knowhere
+    disk: nvme
   tolerations:
     - key: node-role.kubernetes.io/knowhere
       operator: Equal
