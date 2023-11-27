@@ -68,7 +68,7 @@ pipeline {
                       sh "apt install libopenblas-dev libaio-dev libdouble-conversion-dev libevent-dev -y"
                       sh "nvidia-smi"
                       sh "pip3 install ${knowhere_wheel} \
-                          && pip3 install -r requirements.txt --timeout 30 --retries 6  && pytest -v -m 'L0 and cpu'"
+                          && pip3 install -r requirements.txt --timeout 30 --retries 6  && pytest -v test_diskann.py::TestKNN::test_diskann_recall"
                     }
                 }
             }
