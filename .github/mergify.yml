@@ -3,7 +3,7 @@ pull_request_rules:
     conditions:
       - or:
           - -body~=\#[0-9]{1,6}(\s+|$)
-          - -body~=https://github.com/zilliztech/Knowhere/issues/[0-9]{1,6}(\s+|$)
+          - -body~=https://github.com/zilliztech/knowhere/issues/[0-9]{1,6}(\s+|$)
     actions:
       label:
         add:
@@ -29,7 +29,7 @@ pull_request_rules:
     conditions:
           - or:
             - body~=\#[0-9]{1,6}(\s+|$)
-            - body~=https://github.com/zilliztech/Knowhere/issues/[0-9]{1,6}(\s+|$)
+            - body~=https://github.com/zilliztech/knowhere/issues/[0-9]{1,6}(\s+|$)
     actions:
       label:
         remove:
