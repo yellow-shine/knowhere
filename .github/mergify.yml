@@ -2,7 +2,6 @@ pull_request_rules:
   - name: Blocking PR if missing a related issue or PR doesn't have kind/improvement label
     conditions:
       - or:
-          - -body~=\#[0-9]{1,6}(\s+|$)
           - -body~=https://github.com/zilliztech/knowhere/issues/[0-9]{1,6}(\s+|$)
     actions:
       label:
@@ -28,7 +27,6 @@ pull_request_rules:
   - name: Dismiss block label if related issue be added into PR
     conditions:
           - or:
-            - body~=\#[0-9]{1,6}(\s+|$)
             - body~=https://github.com/zilliztech/knowhere/issues/[0-9]{1,6}(\s+|$)
     actions:
       label:
